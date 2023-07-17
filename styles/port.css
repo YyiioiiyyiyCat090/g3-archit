@@ -1,0 +1,80 @@
+/* header */
+header{
+    background: #fff4e7;
+    padding: 50px 240px;
+}
+
+
+/*nav related*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*banner related*/
+.banner-content{
+    min-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.banner-description{
+    color: #727272;
+}
+
+.btn-pro{
+    border-radius: 8px;
+    font-size: 1.25rem;
+    background: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
+}
+
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+/* responsiv media related*/
+@media screen and (max-width: 575px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
