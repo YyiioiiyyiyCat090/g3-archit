@@ -69,22 +69,10 @@ nav li a{
 }
 
 
-/* responsiv media related*/
-@media screen and (max-width: 575px){
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    
-}
-
-
 /*main related*/
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 100px auto;
 
 }
 /* teams-img and title setup related*/
@@ -111,4 +99,25 @@ main{
 .teams-title .text-features{
     color: #FF900E;
     font-weight: 700;
+}
+
+
+/* responsiv media related*/
+@media screen and (max-width: 575px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 2fr;
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }   
 }
