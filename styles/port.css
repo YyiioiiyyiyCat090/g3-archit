@@ -65,7 +65,6 @@ nav li a{
 .banner img{
     margin-top: 20px;
     width: 100%;
-
 }
 
 
@@ -73,10 +72,11 @@ nav li a{
 main{
     max-width: 1440px;
     margin: 100px auto;
-
 }
 /* teams-img and title setup related*/
 .teams-container{
+    margin-top: 70px;
+    margin-left: 200px;
     display: flex;
     align-items: center;
 }
@@ -102,10 +102,64 @@ main{
 }
 
 
+/*fetures sections-cards related*/
+.features{
+    display: flex;
+    gap: 100px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.set-up{
+    width: 550px;
+    margin-left: 80px;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-years-badge p{
+   font-size: 1.5rem;
+}
+.text-features .card{
+    padding: 12px;
+    margin-bottom: 20px;
+   border-radius: 8px;
+   background: #FFF;
+   box-shadow:  0px 4px 30px 0px #727272;
+}
+.features .navbar-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
 /*facts-cards related*/
 .facts-card-container{
     display: flex;
     justify-content: space-around;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
+.navi-title{
+    margin-left: 250px;
+    font-size: 40px;
+}
+.bannerious-description{
+    margin-left: 250px;
+    color: #131313;
 }
 .facts-card-container .card{
     border-radius: 8px;
@@ -163,13 +217,22 @@ main{
         padding-right: 20px;
     }   
     nav,
-     .teams-container,
+     .teams-container,   
      .facts-card-container, 
-     .sponsor-img
+     .sponsor-img,
+     .features
      {
         flex-direction: column;
      }
      .facts-card-container{
         gap: 20px;
+     }
+     .features-img .set-up{
+        width: 90%;
+        margin-left: 0;
+     }
+     .ten-years-badge{
+        position: static;
+        max-width: 250px;
      }
 }
